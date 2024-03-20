@@ -1,4 +1,9 @@
-function CollapsibleComponent({ title, answer }) {
+interface Props {
+  title: string;
+  answer: string;
+}
+
+function CollapsibleComponent({ title, answer }: Props) {
   return (
     <details>
       <summary>{title}</summary>
